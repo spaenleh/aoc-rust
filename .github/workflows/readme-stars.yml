@@ -6,6 +6,10 @@ on:
     #     - cron: "51 */6 * * *" # Every 6 hours
     workflow_dispatch:
 
+    push:
+        branches:
+            - main
+
 jobs:
     update-readme:
         runs-on: ubuntu-latest
